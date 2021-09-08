@@ -1,28 +1,43 @@
 body {
     background-color: yellow;
-}
-
-div {
-    text-align: center;
-}
-
-h1 {
-    font-size: 80px;
-    font-family: Impact;
-}
-
-button {
-    width: 250px;
-    height: 80px;
-    background-color: yellow;
-    color: black;
-}
-
-p{
-    font-size: 35px;
-}
-
-button:hover{
-    background-color: black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  div {
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      text-align: center;
+  }
+  
+  h1 {
+      font-size: 80px;
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      transition-duration: 30s;
+  }
+  
+  h1:hover {
     color: yellow;
-}
+    transform: scale(90)
+  }
+  
+  button {
+      width: 150px;
+      height: 80px;
+      background-color: yellow;
+      color: black;
+  }
+  
+  p{
+      background-color: yellow;
+      font-size: 25px;
+  }
+  
+  button:hover{
+      background-color: black;
+      color: yellow;
+  }
