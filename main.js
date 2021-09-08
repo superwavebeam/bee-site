@@ -2,6 +2,7 @@ let quote = document.querySelector("#quote")
 let char = document.querySelector("#char")
 const image = document.querySelector("img")
 let bee = document.querySelector("#bee")
+let body = document.querySelector("body")
 
 const quotes = [
     {'char': 'x', 
@@ -45,9 +46,8 @@ function getquote(){
     char.textContent = `-${quotes[random].char}`;
 }
 
-function getimg(){
-    image.style.display='block';
-    document.body.appendChild(image);
+function getimg(){ 
+  body.style.backgroundImage = "url('barry.png')";
     bee.textContent = `bee`
 }
 
@@ -55,4 +55,4 @@ function getintro(){
     intro.textContent = `“According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyways. Because bees don't care what humans think is impossible.”`
 }
 
-document.getElementsByTagName("body")[0].style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto";
+document.getElementsByTagName("body")[0].style.cursor = "url('cursor.png')"
